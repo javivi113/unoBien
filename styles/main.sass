@@ -1,0 +1,39 @@
+
+@import url('https://rsms.me/inter/inter.css')
+$spacing: 1rem
+
+header, section, aside, footer, .navbar
+  border-radius: $spacing / 2
+
+body
+  margin: 0
+  background-color: yellowgreen
+  padding: 0
+  display: flex
+  flex-wrap: wrap
+  height: 100vh
+  width: 100vw
+  overflow-y: hidden
+
+  header
+    font-family: 'Inter', sans-serif
+    //background-color: green
+    //display: flex
+    height: calc(10% - #{$spacing})
+    margin: $spacing / 2
+    width: calc(100% - #{$spacing})
+    @import "menu"
+  main
+    background-color: bisque
+    height: 70%
+    margin: 0 $spacing / 2
+    width: calc(80% - #{$spacing})
+  aside
+    background-color: blue
+    height: 70%
+    width: calc(20% - #{$spacing}/2)
+  footer
+    //background: linear-gradient(100deg, #F20000FF 0%, #FFFFFFFF 50%, #FFFF00FF 100%)
+    height: calc(15% - #{$spacing})
+    margin: 0.5rem
+    width: calc(100% - #{$spacing})
